@@ -43,5 +43,7 @@
   <commandGroups>CommandGroup.Справочники</commandGroups>
   <commandGroups>CommandGroup.Документы</commandGroups>
   <catalogs>Catalog.Номенклатура</catalogs>
+  <documents>Document.ПриходныяНакладная</documents>
   <documents>Document.ЗаказКлиента</documents>
+  <enums>Enum.ВидыНоменклатуры</enums>
 </mdclass:Configuration>

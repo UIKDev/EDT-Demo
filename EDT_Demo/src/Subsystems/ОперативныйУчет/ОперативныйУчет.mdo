@@ -17,4 +17,5 @@
   </picture>
   <content>Catalog.Номенклатура</content>
   <content>Document.ЗаказКлиента</content>
+  <content>Document.ПриходныяНакладная</content>
 </mdclass:Subsystem>

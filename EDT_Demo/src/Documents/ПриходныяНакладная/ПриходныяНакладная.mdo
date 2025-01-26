@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9936dc5f-8c16-455c-84e1-cbfdcca34ffb">
+  <producedTypes>
+    <objectType typeId="1c4e642f-0b7c-458b-ad6e-e47caa09d92d" valueTypeId="7feb8c7c-f697-4547-87a6-42089f583beb"/>
+    <refType typeId="a1d62ec5-a9aa-4745-8377-5fd28e6d970c" valueTypeId="960a604b-a1e2-48b9-bae7-4a8e3fedb10b"/>
+    <selectionType typeId="c29dc61d-794c-4f81-a394-fa40692aa412" valueTypeId="170056d9-992b-4d84-a121-2e4b723a9480"/>
+    <listType typeId="6e44551e-9cd7-40a1-a1c7-8f38feaf07ab" valueTypeId="7854957f-1695-4a69-a385-d9c999e66df2"/>
+    <managerType typeId="31f54c6d-f495-4596-91cb-e24c9224d455" valueTypeId="061ad199-775d-4409-9710-6ae6ca764e63"/>
+  </producedTypes>
+  <name>ПриходныяНакладная</name>
+  <synonym>
+    <key>ru</key>
+    <value>Приходныя накладная</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ПриходныяНакладная.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="e2fc5747-979d-47e9-8fc1-d8abf8ea394a">
+    <name>СуммаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма документа</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="dc9f1a39-e077-4dfb-b80f-2548b4d24e49">
+    <producedTypes>
+      <objectType typeId="2c4d00e9-2324-419a-8b5d-b2f0c9f859de" valueTypeId="5fd12c06-d1d7-4435-be8e-401374bf1ad6"/>
+      <rowType typeId="a7b21e54-5200-4343-925a-e7bd1eadbc62" valueTypeId="a486ac85-1afc-4ee1-85d5-68275e1dfe7c"/>
+    </producedTypes>
+    <name>СписокНоменклатуры</name>
+    <synonym>
+      <key>ru</key>
+      <value>Список номенклатуры</value>
+    </synonym>
+    <attributes uuid="4fe61bb0-d08c-4ca9-9618-b50531c0d896">
+      <name>Номенклатура</name>
+      <synonym>
+        <key>ru</key>
+        <value>Номенклатура</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Номенклатура</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <choiceParameters>
+        <name>Отбор.ВидНоменклатуры</name>
+        <value xsi:type="core:ReferenceValue">
+          <value>Enum.ВидыНоменклатуры.EnumValue.Товар</value>
+        </value>
+      </choiceParameters>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="f8d322b3-0b6e-42a0-838c-c31c51ae9888">
+      <name>Количество</name>
+      <synonym>
+        <key>ru</key>
+        <value>Количество</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="45d11691-b61f-4945-b020-c69e2e604c59">
+      <name>Сумма</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сумма</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>
